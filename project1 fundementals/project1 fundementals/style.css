@@ -1,0 +1,167 @@
+
+
+body {
+    background-image: url('img html.jpg') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin:0;
+    position: relative;
+    
+       
+      }
+
+      
+
+.img2{ display: flex; justify-content: center; align-items: center;
+    width: 500px;
+    height:250px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+
+}      
+  
+h3,h4,p,li {color:white;font-family: sans-serif;line-height: 1.5; font-size: 20px;}
+
+
+h2{color:crimson; font-family:sans-serif; margin:50px 200px;
+    background-color: whitesmoke; font-weight: bold;
+     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+      display:block; border-radius: 10px;
+     text-align: center; font-size: 30px; text-transform: uppercase;}
+
+h2:hover{color: #000;background-color: crimson; font-weight: bold; box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.8);}
+
+
+header { font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;background-color:#363937;
+    padding: 3cqb; text-align: center; color:gold; font-size:20px; font-style: italic; margin :0; border-radius: 30px; box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);} 
+
+.bunny{ font-family: cursive; color:white; text-decoration: none; }
+
+.bunny:hover{color:goldenrod; font-weight: bolder;}
+a.bunny:active{background-color: aliceblue; border-radius: 25px;}
+
+
+footer {background-color:#363937; padding: 1rem 0; margin-top: 2rem;border-radius: 30px; }
+
+aside ul.related:link{color:black;font-size:20px;
+font-weight: bold;}
+.lin1:visited{color:white;}
+
+
+
+.lin1:hover{
+    color:red;
+    font-weight: bolder;
+    text-decoration: underline dotted black;
+}
+
+
+.lin1:active{background-color:black;
+font-style: italic;}
+
+
+
+
+aside h4{text-decoration: underline dotted black; }
+
+
+h1{position:relative;}
+h1::after{
+    content:"WD";
+font-size: 15px;
+color:white;
+display: inline-block;
+background-color: goldenrod;
+font-weight: bold;
+border-radius: 5px;
+position: absolute;
+top:0;
+right:30px;
+padding:10px;
+}
+
+
+  
+h4{
+
+font-size:25px;
+text-transform: uppercase;
+text-align: center;
+}
+h3{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+footer p{
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.lin1{ margin-top: 60px;}
+.related-author{
+    font-size: 15px;
+    font-style: bold;
+float: bottom;
+margin-top:25px ;
+margin-bottom: 50px;
+padding-left: 85px;}
+    
+.related{
+    list-style: none;}
+
+
+aside { margin-top: 30px;
+    background-color: rgba(124, 123, 123, 0.312);
+    border: 10px solid goldenrod;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);}
+
+
+.next{
+    background-color: black; color:goldenrod; font-size:20px; border-radius: 30px; font-family: sans-serif;
+    padding:10px;width: 100%; margin: auto;}
+.next:hover{
+    background-color: goldenrod; font-weight: bolder; font-family: fantasy;color:black; box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);}
+.next:active{
+    background-color: blanchedalmond; font-weight: bold;}
+
+
+
+.container{
+    width:1300px;
+    margin-left:auto;
+    margin-right:auto;
+    }
+
+
+.like{padding:10px; background-color: burlywood; font-size: 22px; font-family: sans-serif;border-radius: 30px;
+position:absolute; right:130px; bottom:110px; cursor: pointer;}    
+.like:hover{background-color: crimson; font-weight: bold; box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.8);}
+
+
+h1::first-letter{
+    margin-right: 5px;
+    font-style: normal;
+    font-size: 50px;}
+
+
+  .relimg{ border:#000; 
+    float:left; margin-right: 10px;
+    }
+    article { margin-top: 20px;
+        width:900px;
+        float:left;
+
+    }
+
+    aside{width:300px; display:inline-block;
+         float:right;
+        
+    }
+
+    footer{clear:both;}
