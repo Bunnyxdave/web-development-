@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 Fake News Detection System</h1>
+            <p>AI-powered tool to detect potentially fake news articles</p>
+        </header>
+
+        <div class="main-content">
+            <div class="input-section">
+                <h2>Check News Article</h2>
+                <textarea
+                    id="newsText"
+                    placeholder="Paste news article text here..."
+                    rows="6"
+                ></textarea>
+
+                <div class="button-group">
+                    <button onclick="checkNews()" class="btn-primary">Analyze Text</button>
+                    <button onclick="clearText()" class="btn-secondary">Clear</button>
+                </div>
+
+                <div class="batch-section">
+                    <h3>Batch Analysis</h3>
+                    <textarea
+                        id="batchText"
+                        placeholder="Enter multiple articles (one per line)..."
+                        rows="4"
+                    ></textarea>
+                    <button onclick="checkBatchNews()" class="btn-primary">Analyze Batch</button>
+                </div>
+            </div>
+
+            <div class="results-section" id="resultsSection" style="display: none;">
+                <h2>Analysis Results</h2>
+                <div id="results"></div>
+            </div>
+
+            <div class="stats-section">
+                <h2>System Information</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Model Status</h3>
+                        <p id="modelStatus">Loading...</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Model Type</h3>
+                        <p id="modelType">Loading...</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Training Data</h3>
+                        <p>Text Classification</p>
+                    </div>
+                </div>
+                <button onclick="trainModel()" class="btn-train">Train Model</button>
+            </div>
+        </div>
+
+        <div class="examples-section">
+            <h3>💡 Try These Examples:</h3>
+            <div class="examples">
+                <div class="example-card" onclick="loadExample(this)">
+                    <p><strong>Fake:</strong> "Breaking: Alien invasion reported in New York! Government confirms!"</p>
+                </div>
+                <div class="example-card" onclick="loadExample(this)">
+                    <p><strong>Real:</strong> "Scientists discover new planet that could support human life"</p>
+                </div>
+                <div class="example-card" onclick="loadExample(this)">
+                    <p><strong>Fake:</strong> "Miracle cure for COVID-19 discovered in remote village"</p>
+                </div>
+                <div class="example-card" onclick="loadExample(this)">
+                    <p><strong>Real:</strong> "Local community raises funds for new public library"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
