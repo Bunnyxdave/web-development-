@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff; /* Light theme */
+}
+
+.App {
+    position: relative;
+    z-index: 1;
+}
+
+.main-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.form-section, .chart-section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+.chart-section h3 {
+    text-align: center;
+    color: #0f766e;
+}
+
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Send behind everything */
+    opacity: 0.7; /* 70% opacity */
+}
+
+.App-header {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #0f766e;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+.footer {
+    background: linear-gradient(90deg, #0f766e, #0d5c54);
+    color: #ffffff;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 40px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer-credit {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #c2f0ea;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.footer-links {
+    margin-top: 8px;
+}
+
+.footer-links a {
+    color: #c2f0ea;
+    margin: 0 8px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  filter: brightness(0.3);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.graph-section,
+.result-section,
+.chart-section {
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 12px;
+  width: 80%;
+}
